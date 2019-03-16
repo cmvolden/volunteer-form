@@ -5,28 +5,28 @@
   <title>Volunteer Sign-up</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
-  <link href="css/modules.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1 class="gutter exa">Apply to be a tree planter</h1>
-    <p class="gutter mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    <h1 class="gutter exa push-0 pad-t">Apply to be a tree planter</h1>
+    <p class="gutter mega pad-b">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
   </header>
 
   <fieldset class="gutter">
-    <legend>Personal details</legend>
+    <legend class="giga">Personal details</legend>
     <div>
       <label for="name">Full name</label>
       <input type="text" name="name" id="name">
-      <p class="italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+      <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
     </div>
     <div>
       <label for="nickname">What should we call you?</label>
       <input type="text" name="nickname" id="nickname">
-      <p class="italic">What all your friends call you, e.g. “Liz”.</p>
+      <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
     </div>
     <div>
       <label for="dob">Date of birth</label>
@@ -35,7 +35,7 @@
     <div>
       <label for="shirt">T-shirt size</label>
       <select id="shirt" name="shirt">
-        <option>Select a t-shirt size</option>
+        <option value="">Select a t-shirt size</option>
         <option>Fitted: XS</option>
         <option>Fitted: S</option>
         <option>Fitted: M</option>
@@ -59,7 +59,7 @@
   </fieldset>
   <hr>
   <fieldset class="gutter">
-    <legend>Address</legend>
+    <legend class="giga">Address</legend>
     <div>
       <label for="address">Street address</label>
       <input type="text" name="address" id="address">
@@ -71,7 +71,7 @@
     <div>
       <label for="prov">Province</label>
       <select id="prov" name="prov">
-        <option>Select a province</option>
+        <option value="">Select a province</option>
         <option>Alberta</option>
         <option>British Columbia</option>
         <option>Manitoba</option>
@@ -94,7 +94,7 @@
   </fieldset>
   <hr>
   <fieldset class="gutter">
-    <legend>What activities are you interested in helping with?</legend>
+    <legend class="giga">What activities are you interested in helping with?</legend>
     <div>
       <input type="checkbox" id="holes" name="holes">
       <label for="holes">Digging holes</label>
@@ -130,7 +130,7 @@
   </fieldset>
 
   <fieldset class="gutter">
-    <legend>Do you have any experience with the following?</legend>
+    <legend class="giga">Do you have any experience with the following?</legend>
     <div>
       <input type="checkbox" id="shovels" name="shovels">
       <label for="shovels">Shovels</label>
@@ -174,7 +174,7 @@
   </fieldset>
   <hr>
   <fieldset class="gutter">
-    <legend>Do you have a valid driver’s license?</legend>
+    <legend class="giga">Do you have a valid driver’s license?</legend>
     <div>
       <input type="radio" id="yes" name="license">
       <label for="yes">Yes</label>
@@ -185,7 +185,7 @@
     </div>
   </fieldset>
   <fieldset class="gutter">
-    <legend>Do you have a pick-up truck you’d be willing to use?</legend>
+    <legend class="giga">Do you have a pick-up truck you’d be willing to use?</legend>
     <div>
       <input type="radio" id="yes-truck" name="pickup">
       <label for="yes-truck">Yes</label>
@@ -196,7 +196,7 @@
     </div>
   </fieldset>
   <fieldset class="gutter">
-    <legend>Do you have up-to-date first-aid certification</legend>
+    <legend class="giga">Do you have up-to-date first-aid certification</legend>
     <div>
       <input type="radio" id="yes-aid" name="firstaid">
       <label for="yes-aid">Yes</label>
@@ -208,11 +208,10 @@
   </fieldset>
   <hr>
   <fieldset class="gutter">
-      <legend>Please let us know any comments or questions you may have. (optional)</legend>
-      <textarea id="comments" name="message" required></textarea>
-    </div>
+    <legend class="giga">Please let us know any comments or questions you may have. (optional)</legend>
+    <textarea id="comments" name="message" required></textarea>
   </fieldset>
-  <button type="submit">Apply</button>
+  <button class="btn" type="submit">Apply</button>
   <footer>
     <p class="gutter">© Tree Hugger International Organization</p>
   </footer>
